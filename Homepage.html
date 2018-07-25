@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Home Page</title>
+
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+	<style type="text/css">
+		
+	</style>
+</head>
+<body style="backgroun-image: url(bbb.jpg); 
+    background-repeat: no-repeat;
+    background-attachment: fixed;">
+
+
+<!--navigation bar-->
+	<nav class="navbar navbar-default  navbar-fixed-top" style="background-color: #38b53a; ">
+		
+			<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar1" aria-expanded="false" aria-controls="navbar">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				</button>
+			<div style="margin-top: 10px">
+					<li><a href="Homepage.html" style="margin-left: 25px; font-size: 22px;color: white;margin-top: 10px;">BCCI Board of Control for Cricket in India</a></li>
+			</div>
+			</div>
+
+<div id="navbar1" class="navbar-collapse collapse"  style="color: red">
+			<ul class="nav navbar-nav navbar-center" >
+				<li ><a style="font-size: 18px;color: white;" href="Homepage.html">Home</a></li>
+				<li><a href="Record.html" style="font-size: 18px;color: white;">Record</a></li>
+				<li><a href="Gallary.html" style="font-size: 18px;color: white;">Image Gallary</a></li>
+				<li><a href="About.html" style="font-size: 18px;color: white;">About us</a></li>
+				<li><a href="Contact.html" style="font-size: 18px;color: white;">Contact us</a></li>
+			</ul>
+
+			<ul class="nav navbar-nav navbar-right">
+				<button class="btn btn-warning" data-target="#signup" data-toggle="modal"  style="margin-top: 10px;"><span class="glyphicon glyphicon-user"></span> Login</button>
+				<button class="btn btn-warning" data-target="#login" data-toggle="modal" style="margin-top: 10px; color: white; margin-left: 10px; margin-right: 50px;"><span class="glyphicon glyphicon-log-in"></span> Registration</button>
+						
+			</ul>
+		
+	</nav>
+	
+<!--navbar end -->
+
+
+<!-- Login modal code -->
+<div class="modal" id="signup" role="dialog">
+			<div class="modal-dialog">
+				<div class="modal-content">
+						<div class="modal-header">
+							<button class="close" data-dismiss="modal">&times;</button>
+								<div class="modal-title">
+									<h2>Login Page</h2>
+								</div>
+						</div>
+						
+
+						<div class="modal-body">
+							<div class="row" >
+								<div class="col-sm-8" style="margin-left: 140px;">
+									<form class="form-horizontal">
+										<div class="form-group">
+											<label for="name" class="control-label col-sm-3">UserName</label>
+											<br><br>
+											<div class="col-sm-10">
+											<div class="input-group">
+											<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+												<input type="text" name="fname" id="name" class="form-control" placeholder="Enter UserName">
+											</div>	
+											</div>
+								
+										</div>
+								
+										<div class="form-group">
+											<label for="pass" class="control-label col-sm-3">Password</label>
+											<br><br>
+											<div class="col-sm-10">
+												<div class="input-group">
+											<span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+												<input type="password" name="pname" id="pass" class="form-control" placeholder="Enter UserName">
+											</div>	
+											</div>
+								
+											</div>
+										</div>
+											<br><br>
+
+										<div class="form-group">
+										<div class="col-sm-10" style="margin-left: 130px;">
+											<div class="col-sm-3">
+												<button class="btn btn-primary btn-lg "> Login</button>
+											</div>
+											<div class="col-sm-4" style="margin-left: 10px;">
+												<button class="btn btn-primary btn-lg "> Cancel</button>
+											</div>
+											</div>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					
+							<div class="modal-footer" >
+								<button  data-dismiss="modal" >close</button>
+							</div>
+					
+				</div>
+			</div>
+</div>
+<!--login modal end -->
+
+
+
+<div class="modal" id="login" role="dialog">
+			<div class="modal-dialog" style="width: 800px;">
+				<div class="modal-content">
+						<div class="modal-header" >
+							<button class="close" data-dismiss="modal">&times;</button>
+								<div class="modal-title">
+									<h2>Registration Page</h2>
+								</div>
+						</div>
+						
+
+						<div class="modal-body" >
+							<div class="row">
+							<form>
+
+								<div class="form-group">
+									
+										<div class="col-sm-4">
+											<label for="user" class="control-label">User Name</label><label style="color: red;">*</label>
+										</div>
+										<div class="col-sm-8">
+											<input class="form-control"  id="user" type="text" name="name" placeholder="Enter the User Name" required>
+										</div>
+									
+								</div>
+
+								<br><br><br>
+								<div class="form-group">
+									
+										<div class="col-sm-4">
+											<label for="pass" class="control-label">Password</label><label style="color: red;">*</label>
+										</div>
+										<div class="col-sm-8">
+											<input class="form-control"  id="pass" type="password" name="pas" placeholder="Enter the Password" required>
+										</div>
+									
+								</div>
+								<br><br>
+
+								<div class="form-group">
+									
+										<div class="col-sm-4">
+											<label for="re" class="control-label">Re-Enter Password</label><label style="color: red;">*</label>
+										</div>
+										<div class="col-sm-8">
+											<input class="form-control"  id="re" type="password" name="pname" placeholder="Re-Enter Password" required>
+										</div>
+									
+								</div>
+
+								<br><br>
+									<div class="form-group">
+									
+										<div class="col-sm-4">
+											<label for="mno" class="control-label">Mobile Number</label><label style="color: red;">*</label>
+										</div>
+										<div class="col-sm-8">
+											<input class="form-control"  id="mno" type="number" name="no" placeholder="Enter the Mobile Number" required>
+										</div>
+									
+								</div>
+								<br><br>
+								<div class="form-group">
+									
+										<div class="col-sm-4">
+											<label for="mail" class="control-label">Email ID</label><label style="color: red;">*</label>
+										</div>
+										<div class="col-sm-8">
+											<input class="form-control"  id="mail" type="email" name="ID" placeholder="Enter the Email ID" required>
+										</div>
+									
+								</div>
+
+								<br><br>
+								<div class="form-group">
+									
+										<div class="col-sm-4">
+											<label for="age" class="control-label">Age</label><label style="color: red;">*</label>
+										</div>
+										<div class="col-sm-8">
+											<input class="form-control"  id="age" type="number" name="aage" placeholder="Enter the Age" required>
+										</div>
+									
+								</div>
+								<br><br>
+								<div class="form-group">
+									
+										<div class="col-sm-4">
+											<label for="user" class="control-label">User Name</label><label style="color: red;">*</label>
+										</div>
+										<div class="col-sm-8">
+										<div style=" font-size: 18px;">
+											<input type="radio" name="gender" value="Male" >Male
+
+											<input style="margin-left: 20px;" type="radio" name="gender" value="Female" >Female
+										</div>
+										
+										</div>
+									
+								</div>
+
+
+<br><br>
+								<div class="form-group">
+									
+										<div class="col-sm-4">
+											<label for="age" class="control-label">Age</label><label style="color: red;">*</label>
+										</div>
+										<div class="col-sm-8">
+												<select class="form-control" >
+  												<option value="volvo">Student</option>
+  												<option value="saab">Employee</option>
+  												<option value="mercedes">Manager</option>
+  												<option value="audi">Worker</option>
+  												<option value="audi">None</option>
+												</select>
+										</div>
+									
+								</div>
+
+
+								<br><br>
+								<div class="form-group">
+									<div class="col-sm-6">
+									<div class="col-sm-6">
+										<button class="btn btn-primary form-control">Register</button>
+									</div>
+										<div class="col-sm-6">
+										<button class="btn btn-primary form-control">Clear</button>
+									</div>
+									</div>
+								</div>
+
+
+								</form>
+							</div>
+						</div>
+					
+							<div class="modal-footer">
+								<button  data-dismiss="modal">close</button>
+							</div>
+					
+				</div>
+			</div>
+</div>
+
+
+<!-- carousel start -->
+
+	<div class="row">
+		<div class="col-sm-12">
+
+			<div class="carousel slide" data-ride="carousel" data-interval="2000" id="mycar"> 
+
+				<ol class="carousel-indicators">
+					<li data-target="#mycar" data-slide-to="0"></li>
+					<li data-target="#mycar" data-slide-to="1"></li>
+					<li data-target="#mycar" data-slide-to="2"></li>
+		
+				</ol>
+
+				<div class="carousel-inner">
+					
+					<div class="item active">
+						<img src="cr2.jpg" style="height: 700px;width: 1550px;">
+							<div class="carousel-caption">
+								<h2>India Win the Match</h2>
+								<p> India win the match against West Indies 5-0 </p>
+							</div>
+					</div>
+
+
+					<div class="item">
+						<img src="cr1.jpg" style="height: 700px;width: 1550px;">
+							<div class="carousel-caption">
+								<h2>World Cup 2011</h2>
+								<p> India win the world cup 2011 after 2</p>
+							</div>
+					</div>
+			
+
+					<div class="item">
+						<img src="c.jpg" style="height: 700px;width: 1550px;">
+							<div class="carousel-caption">
+								<h2>Image 3</h2>
+								<p> This is 3</p>
+							</div>
+					</div>
+
+					<a href="#mycar" class="left carousel-control" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+					<a href="#mycar" class="right carousel-control" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+			
+				</div>	
+			</div>
+	
+		</div>
+	</div>
+	
+<ol class="breadcrumb">
+	<li><a href="">Home</a></li>
+	</ol>
+<!-- carousel end  -->
+
+
+
+<br>
+
+<div style="background-color: #FB8C00">
+<div class="container">
+<h2 style="margin-left: 20px;color: blue;">Latest News</h2>
+<div class="row">
+<div class="col-sm-3" style="box-shadow: 1px 1px 4px 4px #9e9e9e;">
+	<img class="img-responsive img-rounded" src="ln1.jpg" style="height: 250px;width: 250px; margin-top: 20px;">
+	<div class="col-sm-8">
+		<h2 style="font-size: 15px"> <b>Shikhar Dhawan to replace injured Murali Vijay	</b></h2>
+	</div>
+</div>
+<div class="col-sm-3"  style="box-shadow: 1px 1px 4px 4px #9e9e9e;">
+	<img src="ln2.jpg" class="img-responsive img-rounded" style="height: 250px;width: 250px;  margin-top: 20px;">
+	<div class="col-sm-8">
+		<h2 style="font-size: 15px"><b> Team India celebrate MS Dhoni birthday</b>	</h2>
+	</div>
+</div>
+
+<div class="col-sm-3"  style="box-shadow: 1px 1px 4px 4px #9e9e9e;">
+	<img src="ln3.jpg" class="img-responsive img-rounded" style="height: 250px;width: 250px;  margin-top: 20px;">
+	<div class="col-sm-8">
+		<h2 style="font-size: 15px;"><b> Ravi shashtri is new coach of Indian team </b> </h2>
+	</div>
+</div>
+
+<div class="col-sm-3"  style="box-shadow: 1px 1px 4px 4px #9e9e9e;">
+	<img src="ln4.jpg" class="img-responsive img-rounded" style="height: 250px;width: 250px;  margin-top: 20px;">
+	<div class="col-sm-8">
+		<h2 style="font-size: 15px"><b> Team India for Sri Lanka Test series announced	</b></h2>
+	</div>
+</div>
+	
+
+</div>
+</div>
+<br>
+
+</div>
+
+<!--   Wiki start -->
+
+<div style="background-color: #AB47BC">
+<div class="container">
+<div class="row">
+	<div class="jumbotron col-sm-8" style="background-color: #00BCD4">
+
+	<h2>Indian Cricket Team</h2>
+		<p class="text-justify">
+			The India national cricket team, also known as Team India and Men in Blue, represents India in international cricket. Governed by the Board of Control for Cricket in India (BCCI), it is a full member of the International Cricket Council (ICC) with Test, One Day International (ODI) and Twenty20 International (T20I) status.
+<br><br>
+			Although cricket was introduced to India by European merchant sailors in the 18th century, and the first cricket club was established in Calcutta in 1792, India's national cricket team did not play its first Test match until 25 June 1932 at Lord's, becoming the sixth team to be granted Test cricket status. In its first fifty years of international cricket, India was one of the weaker teams, winning only 35 of the first 196 Test matches it played. From 1932 India had to wait until 1952, almost 20 years for its first Test victory. The team, however, gained strength in the 1970s with the emergence of players such as batsmen Sunil Gavaskar and Gundappa Viswanath, all-rounder Kapil Dev and the Indian spin quartet of Erapalli Prasanna, Srinivas Venkataraghavan, Bhagwat Chandrasekhar and Bishen Singh Bedi.
+<br><br>
+			Traditionally much stronger at home than abroad, the Indian team has improved its overseas form, especially in limited-overs cricket, since the start of the 21st century, winning Test matches in Australia, England and South Africa. It has won the Cricket World Cup twice – in 1983 under the captaincy of Kapil Dev and in 2011 under the captaincy of Mahendra Singh Dhoni. After winning the 2011 World Cup, India became only the third team after West Indies and Australia to have won the World Cup more than once,[8] and the first cricket team to win the World Cup at home. It also won the 2007 ICC World Twenty20 and 2013 ICC Champions Trophy, under the captaincy of MS Dhoni. It was also the joint champions of 2002 ICC Champions Trophy, along with Sri Lanka.
+<br><br>
+			As of 20 July 2017, India is ranked first in Tests, third in ODIs and fifth in T20Is by the ICC.[9] Virat Kohli is the current captain of the team across all formats, while the head coach is Ravi Shastri.[10] The Indian cricket team has rivalries with other Test-playing nations, most notably with Pakistan, the political arch-rival of India. However, in recent times, rivalries with nations like Australia and England have also gained prominence.
+		</p>
+	</div>
+
+<div class="col-sm-1">
+	
+
+</div>
+	<div class="col-sm-3" style="border: 1px solid black; background-color: #00E676; " >
+	<br>
+		<div class="col-sm-11">
+			<img src="flag.png" style="height: 200px;width: 200px; margin-left: 10px;">
+		</div>
+		<div class="col-sm-9">
+		<h3 class="text-center" style="margin-left: 10px;font-size: 15px;">flag of India</h3>
+		</div>
+
+		<div class="col-sm-12" style="background-color: #dfdce2">
+		<h3 class="text-center" style="margin-left: 10px;font-size: 15px;">Personnel</h3>
+		</div>
+		
+		<div class="col-sm-12">
+		<br>
+			<div class="col-sm-6">
+			Captain	
+			</div>
+
+			<div class="col-sm-6">
+			Virat Kohli	
+			</div>
+				
+
+			<div class="col-sm-6">
+			Coach	
+			</div>
+			<div class="col-sm-6">
+			Ravi Shastri	
+			</div>
+		</div>
+
+
+		<div class="col-sm-12" style="background-color: #dfdce2">
+		
+		<h3 class="text-center" style="margin-left: 10px;font-size: 14px;">International Cricket Council</h3>
+		</div>
+		
+		<div class="col-sm-12">
+		<br>	
+			<div class="col-sm-4">
+				ICC ranking
+			</div>
+			<div class="col-sm-4">
+				Current
+			</div>
+			<div class="col-sm-4">
+				Best ever
+			</div>
+			<div class="col-sm-4">
+				Test
+			</div>
+			<div class="col-sm-4">
+				1st
+			</div>
+			<div class="col-sm-4">
+				1st
+			</div>
+			<div class="col-sm-4">
+				ODI
+			</div>
+			<div class="col-sm-4">
+				3rd
+			</div>
+			<div class="col-sm-4">
+				1st
+			</div>
+			<div class="col-sm-4">
+				T20
+			</div>
+			<div class="col-sm-4">
+				5th
+			</div>
+			<div class="col-sm-4">
+				1st
+			</div>.
+		</div>
+
+
+		<div class="col-sm-12" style="background-color: #dfdce2">
+			<h3 class="text-center" style="margin-left: 10px;font-size: 15px;">One day Internation</h3>
+		</div>
+		
+		<div class="col-sm-12">
+			<div class="col-sm-6">
+				First One day
+			</div>
+
+			<div class="col-sm-6">
+				vs England
+				<br><br>
+			</div>
+
+			<div class="col-sm-4">
+				ODI
+			</div>
+			<div class="col-sm-4">
+				played
+			</div>
+			<div class="col-sm-4">
+				win/loss
+			</div>
+			<div class="col-sm-4">
+				Total
+			</div>
+			<div class="col-sm-4">
+				917
+			</div>
+			<div class="col-sm-4">
+				465/405
+				<br><br>
+			</div>
+
+		</div>
+
+	</div>
+</div>
+</div>
+
+</div>
+<!-- hitwebcounter Code START -->
+
+
+ <div style="background-color: #E91E63">
+
+<div class="container">
+	<div class="row">
+		<div class="col-sm-3">
+			<iframe width="300" height="200" src="https://www.youtube.com/embed/wSwSaF2z124" frameborder="0" allowfullscreen></iframe>
+		</div>
+
+<div class="col-sm-1"></div>
+		<div class="col-sm-3">
+			<iframe width="300" height="200" src="https://www.youtube.com/embed/Y7pB6I49Vnk" frameborder="0" allowfullscreen></iframe>
+		</div>
+<div class="col-sm-1"></div>
+		<div class="col-sm-3">
+			<iframe width="300" height="200" src="https://www.youtube.com/embed/l8DZLX14s2M" frameborder="0" allowfullscreen></iframe>
+		</div>
+		
+	</div>
+</div>
+
+
+<!--footer start -->
+
+<br>
+
+<div class="container" >
+<h2 style="margin-left: 20px;color: blue;">Our Partners</h2>
+<div class="row">
+<div class="col-sm-3">
+<div class="col-sm-8">
+		<h2 style="font-size: 15px"> <b>Team sponsor</b></h2>
+	</div>
+	<img src="p1.jpeg" style="height: 100px;width: 100px;">
+	
+</div>
+<div class="col-sm-3">
+	
+	<div class="col-sm-8">
+		<h2 style="font-size: 15px"><b> Title sponsor</b>	</h2>
+	</div>
+	<img src="p2.jpg" style="height: 100px;width: 100px;">
+</div>
+
+<div class="col-sm-3">
+	
+	<div class="col-sm-8">
+		<h2 style="font-size: 15px;"><b> Official broadcaster</b> </h2>
+	</div>
+	<img src="p3.jpg" style="height: 100px;width: 100px;">
+</div>
+
+<div class="col-sm-3">
+	
+	<div class="col-sm-8">
+		<h2 style="font-size: 15px"><b> KIT sponsor	</b></h2>
+	</div>
+	<img src="p4.png" style="height: 100px;width: 100px;">
+</div>
+	
+
+</div>
+</div>
+<div class="container">
+<div style="float: right;">
+<a href="http://www.facebook.com"><img src="fb.png" class="img-circle" style="width: 70px; margin-right: 15px; height: 70px;"></a>
+
+
+				<a href="http://www.twitter.com"><img src="twitter.png" class="img-circle" style="width: 70px;height: 70px;"></a>
+
+				<a href="http://www.googleplus.com"><img src="gp.png" class="img-circle" style="width: 70px;height: 60px;"></a>
+
+				<a href="http://www.youtube.com"><img src="ytd.png" class="img-circle" style="width: 70px;height: 50px;margin-right: 25px;"></a>
+	
+</div>
+</div>
+
+
+<br><br>
+
+
+	<footer style="background-color: #38b53a; ">
+		<div class="row">
+			<div class="col-sm-3" style="margin-left: 20px;">
+				<h2 style="color: white;">Quick Link</h2>
+				<p><a href="#">Home</a></p>
+				<p><a href="#">Image Gallary</a></p>
+				<p><a href="#">About us</a></p>
+				<p><a href="#">Contact us</a></p>
+			</div>
+
+			<div class="col-sm-3">
+				<h2 style="color: white;">About</h2>
+				<p style="color: blue;">Name:Indian Associan Team<br>
+				Mail:Indiancricket@gmail.com<br>
+				Mobile No:+917387936382</p>
+			</div>
+			
+			
+			
+		</div>
+
+	</footer>
+</div>
+
+
+
+</body>	
+</html>
+
+
+
+

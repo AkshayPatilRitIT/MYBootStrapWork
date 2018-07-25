@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <style>
+  body {
+      position: relative;
+  }
+  
+  ul.nav-pills {
+      top: 20px;
+      position: fixed;
+  }
+  div.col-sm-9 div {
+      
+      font-size: 28px;
+  }
+
+  p{
+  	font-size: 17px;
+  }
+  #section1 {color: #fff; background-color: #1E88E5;}
+  #section2 {color: #fff; background-color: #673ab7;}
+  #section3 {color: #fff; background-color: #ff9800;}
+  #section4 {color: #fff; background-color: #00bcd4;}
+  #section5 {color: #fff; background-color: indigo;}
+  #section6 {color: #fff; background-color: #ff9800;}
+  #section7 {color: #fff; background-color: #00bcd4;}
+  #section8 {color: #fff; background-color: #1E88E5;}
+  
+ 
+  </style>
+</head>
+<body data-spy="scroll" data-target="#myScrollspy" data-offset="20">
+
+<nav class="navbar navbar-default  navbar-fixed-top" style="background-color: #38b53a; ">
+		
+			<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar1" aria-expanded="false" aria-controls="navbar">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				</button>
+			<div style="margin-top: 10px">
+					<li><a href="Homepage.html" style=" margin-left: 25px; font-size: 22px;color: white;margin-top: 11px;">BCCI Board of Control for Cricket in India</a></li>
+			</div>
+			</div>
+
+<div id="navbar1" class="navbar-collapse collapse"  style="color: red">
+			<ul class="nav navbar-nav">
+				<li ><a style="font-size: 18px;color: white;" href="Homepage.html">Home</a></li>
+				<li><a href="Record.html" style="font-size: 18px;color: white;">Record</a></li>
+				<li><a href="Gallary.html" style="font-size: 18px;color: white;">Image Gallary</a></li>
+				<li><a href="About.html" style="font-size: 18px;color: white;">About us</a></li>
+				<li><a href="Contact.html" style="font-size: 18px;color: white;">Contact us</a></li>
+			</ul>
+
+			<ul class="nav navbar-nav navbar-right" >
+				<button class="btn btn-warning" data-target="#signup" data-toggle="modal"  style="margin-top: 10px;"><span class="glyphicon glyphicon-user"></span> Login</button>
+				<button class="btn btn-warning" data-target="#login" data-toggle="modal" style="margin-top: 10px; color: white; margin-left: 10px;margin-right: 50px;"><span class="glyphicon glyphicon-log-in"></span> Registration</button>
+						
+			</ul>
+		
+	</nav>
+
+
+
+
+
+<!-- Login modal code -->
+<div class="modal" id="signup" role="dialog">
+			<div class="modal-dialog">
+				<div class="modal-content">
+						<div class="modal-header" style="background-color: orange;">
+							<button class="close" data-dismiss="modal">&times;</button>
+								<div class="modal-title">
+									<h2>Login Page</h2>
+								</div>
+						</div>
+						
+
+						<div class="modal-body">
+							<div class="row" >
+								<div class="col-sm-8" style="margin-left: 140px;">
+									<form class="form-horizontal">
+										<div class="form-group">
+											<label for="name" class="control-label col-sm-3">UserName</label>
+											<br><br>
+											<div class="col-sm-10">
+											<div class="input-group">
+											<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+												<input type="text" name="fname" id="name" class="form-control" placeholder="Enter UserName">
+											</div>	
+											</div>
+								
+										</div>
+								
+										<div class="form-group">
+											<label for="pass" class="control-label col-sm-3">Password</label>
+											<br><br>
+											<div class="col-sm-10">
+												<div class="input-group">
+											<span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+												<input type="password" name="pname" id="pass" class="form-control" placeholder="Enter UserName">
+											</div>	
+											</div>
+								
+											</div>
+										</div>
+											<br><br>
+
+										<div class="form-group">
+										<div class="col-sm-10" style="margin-left: 130px;">
+											<div class="col-sm-3">
+												<button class="btn btn-primary btn-lg "> Login</button>
+											</div>
+											<div class="col-sm-4" style="margin-left: 10px;">
+												<button class="btn btn-primary btn-lg "> Cancel</button>
+											</div>
+											</div>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					
+							<div class="modal-footer" style="background-color: green;">
+								<button  data-dismiss="modal" >close</button>
+							</div>
+					
+				</div>
+			</div>
+</div>
+<h1 style="margin-left: 450px;margin-top: 70px;">Grounds in India</h1>
+<div class="container">
+  <div class="row">
+    <nav class="col-sm-3" id="myScrollspy" >
+      <ul class="nav nav-pills nav-stacked" style="margin-top: 70px;">
+        <li class="active"><a href="#section1">Section 1</a></li>
+        <li><a href="#section2">Section 2</a></li>
+        <li><a href="#section3">Section 3</a></li>
+        <li><a href="#section4">Section 4</a></li>
+        <li><a href="#section5">Section 5</a></li>
+        <li><a href="#section6">Section 6</a></li>
+        <li><a href="#section7">Section 7</a></li>
+        <li><a href="#section8">Section 8</a></li>
+          
+        
+      </ul>
+    </nav>
+    <div class="col-sm-9">
+      <div id="section1">    
+        <h1>Eden Gardens</h1>
+        <p>Eden Gardens  is a cricket ground in Kolkata, India established in 1864. It is the home venue of the Bengal cricket team and the IPL franchise cricket team Kolkata Knight Riders, and is also a venue for Test, ODI and T20I matches of the India national cricket team.[2] With a seating capacity of 66,349,[3] it is the largest cricket stadium in India, and the second-largest cricket stadium in the world.</p>
+      </div>
+      <div id="section2"> 
+        <h1>M.A. Chidambaram Stadium</h1>
+        <p>Chepauk Stadium aka M. A. Chidambaram Stadium is a cricket stadium in Chennai, India. The stadium, most commonly known as Chepauk, was established in 1916 and it is the oldest continuously used cricket stadium in the country. Its alternative name is after M. A. Chidambaram, former President of BCCI and the stadium was formerly known as Madras Cricket Club Ground. It is the home ground of the Tamil Nadu cricket team and the Indian Premier League team Chennai Super Kings. Chepauk hosted its first Test match on 10 February 1934, the first ever Ranji Trophy match in 1936 and Indian cricket team's first ever test victory in 1952 against England. The 1986 India-Australia match held at Chepauk was only the second ever Tied Test in the history of the game.</p>
+      </div>        
+      <div id="section3">         
+        <h1>Feroz Shah Kotla Ground</h1>
+        <p>The Feroz Shah Kotla Ground is a cricket ground located at Bahadur Shah Zafar Marg, New Delhi.[2] It was established in 1883 and is the second oldest international cricket stadium still functional in India, after the Eden Gardens in Kolkata. As of 2016, the India national cricket team has been undefeated for over 28 years in Test matches and for over 10 years in ODI matches at this ground.[3] The ground is known for Anil Kumble's 10 wickets in an innings against Pakistan, Sachin Tendulkar's 35th test ton to overcome Sunil Gavaskar to become the batsman with the most international Test centuries and formerly Gavaskar's 29th test ton to equal Don Bradman's tally of 29 centuries.</p>
+      </div>
+      <div id="section4">         
+        <h1>Nehru Stadium (Chennai)</h1>
+        <p>Jawaharlal Nehru Stadium, (also known as the Marina Arena) is a multipurpose stadium and has a capacity of 40,000.[2] It hosts football matches and athletic competitions. The complex also houses a multipurpose indoor stadium with a seating capacity of 8000 which hosts volleyball, basketball, table tennis games. The stadium is also used for functions and concerts. The stadium is named after Jawaharlal Nehru, India's first Prime Minister. The stadium earlier hosted cricket Test Matches between 1956 and 1965.[3]
+<br>
+The stadium is located at Sydenhams Road, Park Town behind the Chennai Central suburban railway station and Ripon Building. Tamil Nadu football team which plays in Santosh Trophy and Chennaiyin FC, the Indian Super League team representing Chennai use the stadium as their home ground.</p>
+      </div>      
+      <div id="section5">         
+        <h1>Wankhede Stadium</h1>
+        <p>The Wankhede Stadium is a cricket stadium in Mumbai, Maharashtra. The stadium now has capacity of 33,108, following renovations for the 2011 Cricket World Cup. Before the upgrade, the capacity was approximately 45,000.[4] The Wankhede stadium has been host to numerous high-profile cricket matches in the past, most notable being the 2011 Cricket World Cup Final, in which India defeated Sri Lanka by 6 wickets. The stadium witnessed the last match of Sachin Tendulkar's international career. Additionally, it has hosted many other matches in both the 1996 as well as 2011 Cricket World Cup. The stadium is also the host to the match in which Ravi Shastri hit six sixes in an over</p>
+      </div>
+
+       <div id="section6">         
+        <h1>Gandhi Stadium</h1>
+        <p>The stadium was built in 1955 and serves as the home ground for two Indian domestic cricket teams: Punjab and North Zone. The stadium hosted a solitary Test Match against Pakistan as well as 3 ODI matches with the host team - India winning both of these matches.</p>
+      </div>
+       <div id="section7">         
+        <h1>Sardar Patel Stadium</h1>
+        <p>Sardar Patel Gujarat Stadium (Motera Stadium) is one of the premier cricket stadiums of India in the Motera locality of Ahmedabad. Because of its location, the stadium is commonly called 'Motera Stadium' to avoid confusion with another stadium of the same name in Navrangpura, Ahmedabad. Sardar Patel stadium is owned by Gujarat Cricket Association and comes under the aegis of the West Zone. It is the largest stadium in the state of Gujarat with an official capacity of 49,000 spectators.[2][4] It is equipped with floodlights for day-and-night games and is a regular venue for Test cricket and One Day Internationals (ODI) matches.</p>
+      </div>
+       <div id="section8">         
+        <h1>Nehru Stadium (Guwahati)</h1>
+        <p>Nehru Stadium  is a multi-purpose stadium in Guwahati, Assam, India and managed by the Board of Sports, Government of Assam. Radha Govinda Baruah supervised, constructed and named the stadium as Nehru Stadium. It is used both for football and cricket matches. The stadium holds 15,000 people at most and was built in 1962. So far it hosted 14 One Day Internationals matches and many matches of top domestic cricket tournaments like Ranji Trophy, Duleep Trophy and Deodhar Trophy. In football it regularly hosts prestigious Bordoloi Trophy. The stadium also hosted Santosh Trophy and Federation Cup tournaments.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

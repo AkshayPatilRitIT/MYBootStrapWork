@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Player Gallary</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+</head>
+<body style="background-color: #226346; 
+    background-repeat: no-repeat;
+    background-attachment: fixed;">
+
+
+<!--navigation bar-->
+	<!--navigation bar-->
+<nav class="navbar navbar-default  navbar-fixed-top" style="background-color: #38b53a; ">
+		
+			<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar1" aria-expanded="false" aria-controls="navbar">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				</button>
+			<div style="margin-top: 10px">
+					<li><a href="Homepage.html" style=" margin-left: 25px; font-size: 22px;color: white;margin-top: 11px;">BCCI Board of Control for Cricket in India</a></li>
+			</div>
+			</div>
+
+<div id="navbar1" class="navbar-collapse collapse"  style="color: red">
+			<ul class="nav navbar-nav">
+				<li ><a style="font-size: 18px;color: white;" href="Homepage.html">Home</a></li>
+				<li><a href="Record.html" style="font-size: 18px;color: white;">Record</a></li>
+				<li><a href="Gallary.html" style="font-size: 18px;color: white;">Image Gallary</a></li>
+				<li><a href="About.html" style="font-size: 18px;color: white;">About us</a></li>
+				<li><a href="Contact.html" style="font-size: 18px;color: white;">Contact us</a></li>
+			</ul>
+
+			<ul class="nav navbar-nav navbar-right" >
+				<button class="btn btn-warning" data-target="#signup" data-toggle="modal"  style="margin-top: 10px;"><span class="glyphicon glyphicon-user"></span> Login</button>
+				<button class="btn btn-warning" data-target="#login" data-toggle="modal" style="margin-top: 10px; color: white; margin-left: 10px;margin-right: 50px;"><span class="glyphicon glyphicon-log-in"></span> Registration</button>
+						
+			</ul>
+		
+	</nav>
+	
+<!--navbar end -->
+
+
+
+
+
+<!-- Login modal code -->
+<div class="modal" id="signup" role="dialog">
+			<div class="modal-dialog">
+				<div class="modal-content">
+						<div class="modal-header" style="background-color: orange;">
+							<button class="close" data-dismiss="modal">&times;</button>
+								<div class="modal-title">
+									<h2>Login Page</h2>
+								</div>
+						</div>
+						
+
+						<div class="modal-body">
+							<div class="row" >
+								<div class="col-sm-8" style="margin-left: 140px;">
+									<form class="form-horizontal">
+										<div class="form-group">
+											<label for="name" class="control-label col-sm-3">UserName</label>
+											<br><br>
+											<div class="col-sm-10">
+											<div class="input-group">
+											<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+												<input type="text" name="fname" id="name" class="form-control" placeholder="Enter UserName">
+											</div>	
+											</div>
+								
+										</div>
+								
+										<div class="form-group">
+											<label for="pass" class="control-label col-sm-3">Password</label>
+											<br><br>
+											<div class="col-sm-10">
+												<div class="input-group">
+											<span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+												<input type="password" name="pname" id="pass" class="form-control" placeholder="Enter UserName">
+											</div>	
+											</div>
+								
+											</div>
+										</div>
+											<br><br>
+
+										<div class="form-group">
+										<div class="col-sm-10" style="margin-left: 130px;">
+											<div class="col-sm-3">
+												<button class="btn btn-primary btn-lg "> Login</button>
+											</div>
+											<div class="col-sm-4" style="margin-left: 10px;">
+												<button class="btn btn-primary btn-lg "> Cancel</button>
+											</div>
+											</div>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					
+							<div class="modal-footer" style="background-color: green;">
+								<button  data-dismiss="modal" >close</button>
+							</div>
+					
+				</div>
+			</div>
+</div>
+<!--login modal end -->
+
+
+
+<div class="modal" id="login" role="dialog">
+			<div class="modal-dialog" style="width: 800px;">
+				<div class="modal-content">
+						<div class="modal-header" style="background-color: orange;">
+							<button class="close" data-dismiss="modal">&times;</button>
+								<div class="modal-title">
+									<h2>Registration Page</h2>
+								</div>
+						</div>
+						
+
+						<div class="modal-body" >
+							<div class="row">
+							<form>
+
+								<div class="form-group">
+									
+										<div class="col-sm-4">
+											<label for="user" class="control-label">User Name</label><label style="color: red;">*</label>
+										</div>
+										<div class="col-sm-8">
+											<input class="form-control"  id="user" type="text" name="name" placeholder="Enter the User Name" required>
+										</div>
+									
+								</div>
+
+								<br><br><br>
+								<div class="form-group">
+									
+										<div class="col-sm-4">
+											<label for="pass" class="control-label">Password</label><label style="color: red;">*</label>
+										</div>
+										<div class="col-sm-8">
+											<input class="form-control"  id="pass" type="password" name="pas" placeholder="Enter the Password" required>
+										</div>
+									
+								</div>
+								<br><br>
+
+								<div class="form-group">
+									
+										<div class="col-sm-4">
+											<label for="re" class="control-label">Re-Enter Password</label><label style="color: red;">*</label>
+										</div>
+										<div class="col-sm-8">
+											<input class="form-control"  id="re" type="password" name="pname" placeholder="Re-Enter Password" required>
+										</div>
+									
+								</div>
+
+								<br><br>
+									<div class="form-group">
+									
+										<div class="col-sm-4">
+											<label for="mno" class="control-label">Mobile Number</label><label style="color: red;">*</label>
+										</div>
+										<div class="col-sm-8">
+											<input class="form-control"  id="mno" type="number" name="no" placeholder="Enter the Mobile Number" required>
+										</div>
+									
+								</div>
+								<br><br>
+								<div class="form-group">
+									
+										<div class="col-sm-4">
+											<label for="mail" class="control-label">Email ID</label><label style="color: red;">*</label>
+										</div>
+										<div class="col-sm-8">
+											<input class="form-control"  id="mail" type="email" name="ID" placeholder="Enter the Email ID" required>
+										</div>
+									
+								</div>
+
+								<br><br>
+								<div class="form-group">
+									
+										<div class="col-sm-4">
+											<label for="age" class="control-label">Age</label><label style="color: red;">*</label>
+										</div>
+										<div class="col-sm-8">
+											<input class="form-control"  id="age" type="number" name="aage" placeholder="Enter the Age" required>
+										</div>
+									
+								</div>
+								<br><br>
+								<div class="form-group">
+									
+										<div class="col-sm-4">
+											<label for="user" class="control-label">User Name</label><label style="color: red;">*</label>
+										</div>
+										<div class="col-sm-8">
+										<div style=" font-size: 18px;">
+											<input type="radio" name="gender" value="Male" >Male
+
+											<input style="margin-left: 20px;" type="radio" name="gender" value="Female" >Female
+										</div>
+										
+										</div>
+									
+								</div>
+
+
+<br><br>
+								<div class="form-group">
+									
+										<div class="col-sm-4">
+											<label for="age" class="control-label">Age</label><label style="color: red;">*</label>
+										</div>
+										<div class="col-sm-8">
+												<select class="form-control" >
+  												<option value="volvo">Student</option>
+  												<option value="saab">Employee</option>
+  												<option value="mercedes">Manager</option>
+  												<option value="audi">Worker</option>
+  												<option value="audi">None</option>
+												</select>
+										</div>
+									
+								</div>
+
+
+								<br><br>
+								<div class="form-group">
+									<div class="col-sm-6">
+									<div class="col-sm-6">
+										<button class="btn btn-primary form-control">Register</button>
+									</div>
+										<div class="col-sm-6">
+										<button class="btn btn-primary form-control">Clear</button>
+									</div>
+									</div>
+								</div>
+
+
+								</form>
+							</div>
+						</div>
+					
+							<div class="modal-footer" style="background-color: green;">
+								<button  data-dismiss="modal">close</button>
+							</div>
+					
+				</div>
+			</div>
+</div>
+
+
+
+
+
+<div class="container">
+
+
+<div style="margin-top: 90px;">
+
+
+<a href="demo.html"><h1>Click here <i></i>nformation of ground</h1></a>
+
+<h2>Cricket Grounds in India</h2>
+	<div class="col-sm-4" style="background-color: #d0ddd4">
+
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3684.387310917535!2d88.34107581440512!3d22.56461303895158!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a02779ff7e5b9af%3A0x1d1b1884bdbbbd79!2sEden+Gardens!5e0!3m2!1sen!2sin!4v1500698155655" width="345" height="350" frameborder="0" style="border:1px solid black; margin-top: 10px;" allowfullscreen></iframe>
+
+		<h4>Eden Gardens</h4>
+	</div>
+
+<div class="col-sm-4" style="background-color: #d0ddd4">
+
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.57326505123!2d80.27709151427484!3d13.062812716405972!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5268a0fe968105%3A0x5e53260f961d4aa9!2sMA+Chidambaram+Stadium!5e0!3m2!1sen!2sin!4v1500699257743" width="345" height="350" frameborder="0" style="border:1px solid black; margin-top: 10px;" allowfullscreen></iframe>
+
+		<h4>Chidambaram Stadium</h4>
+	</div>
+
+	<div class="col-sm-4" style="background-color: #d0ddd4">
+
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3501.733678129171!2d77.24083501453238!3d28.637742990597054!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfcd82caa5747%3A0x9eb7b9e749e5e743!2sFeroz+Shah+Kotla+Ground!5e0!3m2!1sen!2sin!4v1500699398739" width="345" height="350" frameborder="0" style="border:1px solid black; margin-top: 10px;" allowfullscreen></iframe>
+
+		<h4>Feroz Shah Kotla Ground</h4>
+	</div>
+
+	<div class="col-sm-4" style="background-color: #d0ddd4">
+
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3773.9802964165333!2d72.82255071434521!3d18.93226626139573!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7d1e64b0e104f%3A0xe0cc7759694c6489!2sBrabourne+Stadium!5e0!3m2!1sen!2sin!4v1500699466291" width="345" height="350" frameborder="0" style="border:1px solid black; margin-top: 10px;" allowfullscreen></iframe>
+
+		<h4>Brabourne Stadium</h4>
+	</div>
+
+
+	<div class="col-sm-4" style="background-color: #d0ddd4">
+
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.2131839110425!2d80.26945731427506!3d13.085671415906829!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5265fbe6a909ab%3A0x5a6046dfc9f0d784!2sJawaharlal+Nehru+Stadium!5e0!3m2!1sen!2sin!4v1500699628429" width="345" height="350" frameborder="0" style="border:1px solid black; margin-top: 10px;" allowfullscreen></iframe>
+
+		<h4>Jawaharlal Nehru Stadium</h4>
+	</div>
+	<div class="col-sm-4" style="background-color: #d0ddd4">
+
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.891059066698!2d77.59740451427403!3d12.978819118232819!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1664d3619b53%3A0xc13769784709aec!2sM+Chinnaswamy+Stadium!5e0!3m2!1sen!2sin!4v1500699744102" width="345" height="350" frameborder="0" style="border:1px solid black; margin-top: 10px;" allowfullscreen></iframe>
+
+		<h4>M Chinnaswamy Stadium</h4>
+	</div>
+
+	<div class="col-sm-4" style="background-color: #d0ddd4">
+
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3773.830294919926!2d72.8235896143453!3d18.938904361190186!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7d1e0f0a26a81%3A0x87d6e47e04df3916!2sWankhede+Stadium!5e0!3m2!1sen!2sin!4v1500699858891" width="345" height="350" frameborder="0" style="border:1px solid black; margin-top: 10px;" allowfullscreen></iframe>
+
+		<h4>Wankhede Stadium</h4>
+	</div>
+	<div class="col-sm-4" style="background-color: #d0ddd4">
+
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3772.7525253031968!2d72.81344731434599!3d18.986533759713673!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7ce7d4e6b1b29%3A0x1ce4322691e209b9!2sSardar+Vallabhbhai+Patel+Stadium!5e0!3m2!1sen!2sin!4v1500699954737" width="345" height="350" frameborder="0" style="border:1px solid black; margin-top: 10px;" allowfullscreen></iframe>
+
+		<h4>Sardar Patel Stadium</h4>
+	</div>
+	<div class="col-sm-4" style="background-color: #d0ddd4">
+
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3571.177388306384!2d80.34554331448335!3d26.482232784865374!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399c38bcb8be106b%3A0x810c4a22ec6601e5!2sGreen+Park+International+Stadium!5e0!3m2!1sen!2sin!4v1500700211054" width="345" height="350" frameborder="0" style="border:1px solid black; margin-top: 10px;" allowfullscreen></iframe>
+
+		<h4>Green Park Stadium</h4>
+	</div>
+
+	</div>
+</div>
+
+<!--footer start -->
+<br><br><br>
+	<footer style="background-color: #38b53a; ">
+		<div class="row">
+			<div class="col-sm-4" style="margin-left: 20px;">
+				<h2 style="color: white;">Quick Link</h2>
+				<p><a href="#">Home</a></p>
+				<p><a href="#">Image Gallary</a></p>
+				<p><a href="#">About us</a></p>
+				<p><a href="#">Contact us</a></p>
+			</div>
+
+			<div class="col-sm-4">
+				<h2 style="color: white;">About</h2>
+				<p style="color: blue;">Name:Indian Associan Team<br>
+				Mail:Indiancricket@gmail.com<br>
+				Mobile No:+917387936382</p>
+			</div>
+			
+		</div>
+
+	</footer>
+
+</body>
+</html>

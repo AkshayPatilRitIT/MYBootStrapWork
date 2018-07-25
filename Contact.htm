@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset = "utf-8">
+	<meta name = "viewport" content = "width = device-width, initial-scale = 1">
+
+	<meta http-equiv="refresh" content="100">
+
+	<title>Indian Cricket BCCI</title>
+	
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+
+</head>
+<body>
+
+	<!--navigation bar-->
+
+<nav class="navbar navbar-inverse">
+  
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">WebSiteName</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Home</a></li>
+      <li><a href="#">Page 1</a></li>
+      <li><a href="#">Page 2</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+      <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+    </ul>
+  
+</nav>
+<!--navbar end -->
+
+<!--Container Start -->
+<div class="container-fluid">
+
+	<br><br>
+	<div class="row">
+		<div class="col-md-3">
+			<div style="border: 1px solid black;">
+				<div class="form-control">
+					<li><a href="IndianCricket.htm">Home</a></li>
+					<li><a href="#">All matches Record</a></li>
+					<li><a href="#">All players Record</a></li>
+					<li><a href="#">All T20 Record</a></li>
+					<li><a href="#">All Test Matches Record</a></li>
+					<li><a href="#">All ODI Record</a></li>
+					<li><a href="#">All Runs Record</a></li>
+					<li><a href="#">All Catches Record</a></li>
+					<li><a href="#">Highest Run Record</a></li>
+					<li><a href="#">Highest wicket Record</a></li>
+					<li><a href="#">Highest run-out Record</a></li>
+					<li><a href="Contact.htm">Contact with us </a></li>
+
+				</div>
+			</div>
+		</div>
+
+		<div class="col-md-9 col-md-6">
+			
+			<div class="col-md-1" ></div>
+			<div class="col-md-10" style="border: 1px solid black;">
+
+				<div >
+				<form>
+					<div class="form-group">
+						<label for="user_name">Enter Name</label>
+						<input  type="text" id="user_name" name="user" class="form-control col-md-7" placeholder="Enter name here...." >
+						<label id="errorUser"></label>
+					</div>
+					<br>
+					
+					<div class="form-group">
+						<label for="Email">Enter Email</label>
+						<input  type="email" id="Email" name="email" class="form-control col-md-7" placeholder="Enter Email here...." required>
+					</div>
+
+					<br>
+					
+					<div class="form-group">
+						<label for="gen">Enter gender</label><br>
+						<select  id="gen" class="form-control">
+						  <option value="male">male</option>
+						  <option value="female">Female</option>
+						  <option value="other">Other</option>
+						</select>
+					</div>
+
+					<br>
+
+					<div class="form-group">
+						<label for="birthdate">Enter Birthdate</label><br>
+						<input type="date" name="birth" class="form-control" id="birthdate" placeholder="Enter Birthdate.....">
+					</div>
+
+					<br>
+					<label>Enter Description</label>
+					<textarea class="form-control" id="decription"></textarea>
+					<br>
+					<input type="submit" name="sub" value="Submit" onclick="OnCheck()" class="btn btn-primary">
+					<br>
+					<br>
+
+				</form>
+				</div>
+			</div>
+			<div class="col-md-1" ></div>
+						
+		</div>
+ 
+		
+
+
+	</div>
+</div>
+<!--Container End -->
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+<script type="text/javascript">
+	
+function OnCheck()
+{
+	var username=document.getElementById("user_name").value;
+
+	if (username.value.length == 0) {
+		document.getElementById("errorUser").value="Enter plz username";
+	}
+	
+}
+
+</script>
+</body>
+</html>
